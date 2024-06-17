@@ -6,12 +6,16 @@ import Home from './Routes/Home';
 import Contact from './Routes/Contact';
 import Detail from './Routes/Detail';
 import Favs from './Routes/Favs';
+import '../src/Styles/App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <div className="Header">
+          <img src="/DH.ico" alt="DHicon" className="header-icon" />
+          <Navbar className="header-navbar" />
+        </div>
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/contacto" element={<Contact />} />

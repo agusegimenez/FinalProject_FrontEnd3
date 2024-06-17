@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ContextGlobal } from './utils/global.context';
+import '../Styles/Card.css';
 
 const Card = ({ name, username, id }) => {
   const { state, dispatch } = useContext(ContextGlobal);
@@ -17,9 +18,9 @@ const Card = ({ name, username, id }) => {
   return (
     <div className={`card ${state.theme}`}>
       <Link to={`/dentist/${id}`}>
+        <img src="/doctor.jpg" alt="Doctorimg" />
         <h3>{name}</h3>
         <p>{username}</p>
-        <p>ID: {id}</p>
       </Link>
       <button onClick={addFav} className="favButton">Add fav</button>
     </div>

@@ -1,0 +1,18 @@
+.App {
+    display: flex;
+    flex-direction: column;
+}
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    .navBarStyles img {
+    width: 50px;
+    }
+    
+    .Navbar {
+    }
