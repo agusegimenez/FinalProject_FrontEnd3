@@ -119,6 +119,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+
 .dark{
   background-color: #12121296;
   color: white;
@@ -127,9 +128,8 @@ tr:nth-child(even) {
   color: white;
 }
 
-
-.dark .Header-Styles{
-  background-color:#12121296;
+.Header-styles .dark{
+  background-color:#c3161696;
   color: white;
 
 }

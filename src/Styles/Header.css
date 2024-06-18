@@ -5,6 +5,12 @@
     align-items: center;
     padding: 20px;
     }
+    .Header-styles {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
     
     .navBarStyles img {
     width: 50px;

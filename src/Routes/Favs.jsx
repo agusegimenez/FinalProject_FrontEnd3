@@ -27,7 +27,7 @@ const Favs = () => {
             id={dentist.id}
             name={dentist.name}
             username={dentist.username}
-            showDeleteButton={true} // Muestra el botón de eliminar solo en Favs
+            showDeleteButton={true}
             onDelete={removeFromFavs}
           />
         ))}

@@ -10,6 +10,7 @@
     background-color: rgb(204, 240, 255);
 }
 
-.header {
-    background-color: black;
+
+.Header-styles .dark {
+    background-color: #12121296;
 }
