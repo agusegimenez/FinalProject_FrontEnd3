@@ -1,0 +1,19 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    }
+    
+    .navBarStyles img {
+    width: 50px;
+    }
+    
+    .header-navbar {
+        display: flex;
+    }
+
+.nav .a{
+    margin:10px;
+}

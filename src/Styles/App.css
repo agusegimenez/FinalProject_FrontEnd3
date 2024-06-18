@@ -2,17 +2,14 @@
     display: flex;
     flex-direction: column;
 }
-.Header {
+
+.Header-Styles {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    }
-    
-    .navBarStyles img {
-    width: 50px;
-    }
-    
-    .Navbar {
-    }
+    background-color: rgb(204, 240, 255);
+}
+
+.header {
+    background-color: black;
+}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ContextGlobal } from './utils/global.context';
 import '../Styles/Card.css';
 
-const Card = ({ name, username, id }) => {
+const Card = ({ name, username, id, showDeleteButton, onDelete }) => {
   const { state, dispatch } = useContext(ContextGlobal);
 
   const addFav = () => {
@@ -15,6 +15,10 @@ const Card = ({ name, username, id }) => {
     }
   };
 
+  const handleDelete = () => {
+    onDelete(id);
+  };
+
   return (
     <div className={`card ${state.theme}`}>
       <Link to={`/dentist/${id}`}>
@@ -22,7 +26,12 @@ const Card = ({ name, username, id }) => {
         <h3>{name}</h3>
         <p>{username}</p>
       </Link>
-      <button onClick={addFav} className="favButton">Add fav</button>
+      {showDeleteButton && (
+        <button onClick={handleDelete} className="deleteButton">Delete</button>
+      )}
+      {!showDeleteButton && (
+        <button onClick={addFav} className="favButton">Add fav</button>
+      )}
     </div>
   );
 };

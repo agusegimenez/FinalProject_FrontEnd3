@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ContextGlobal } from '../Components/utils/global.context';
+import "../Styles/Detail.css";
 
 const Detail = () => {
   const { id } = useParams();
@@ -13,15 +14,19 @@ const Detail = () => {
   }, [id, state.data]);
 
   return (
-    <div className={state.theme === "dark" ? "dark" : ""}>
-      <h1>Detail Dentist id {id}</h1>
+    <div className={state.theme === "dark" ? "dark detail-container" : "detail-container"}>
+      <h1>Detail Dentist {id}</h1>
       {dentist && (
-        <div>
-          <p>Name: {dentist.name}</p>
-          <p>Email: {dentist.email}</p>
-          <p>Phone: {dentist.phone}</p>
-          <p>Website: {dentist.website}</p>
-        </div>
+        <div className="detail-grid">
+        <div className="header">Name</div>
+        <div className="header">Email</div>
+        <div className="header">Phone</div>
+        <div className="header">Website</div>
+        <div>{dentist.name}</div>
+        <div>{dentist.email}</div>
+        <div>{dentist.phone}</div>
+        <div>{dentist.website}</div>
+      </div>
       )}
     </div>
   );
