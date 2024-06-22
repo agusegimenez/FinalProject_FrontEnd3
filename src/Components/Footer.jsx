@@ -1,20 +1,22 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
     <footer>
-        <div className='footerLogo'>
-        <p>Powered by</p>
-        <img src="/DH.ico" alt='DH-logo' />
+      <div className='footerLogo'>
+        <div className='footerDH'>
+          <p>Powered by</p>
+          <img src="/DH.ico" alt='DH-logo' />
         </div>
         <div className='footerSocials'>
-        <img src="/ico-instagram.png" alt='DH-Instagram' />
-        <img src="/ico-tiktok.png" alt='DH-Tiktok' />
-        <img src="/ico-whatsapp.png" alt='DH-Whatsapp' />
-        <img src="/ico-facebook.png" alt='DH-Facebook' />
+          <img src="/images/ico-instagram.png" alt='DH-Instagram' />
+          <img src="/images/ico-tiktok.png" alt='DH-Tiktok' />
+          <img src="/images/ico-whatsapp.png" alt='DH-Whatsapp' />
+          <img src="/images/ico-facebook.png" alt='DH-Facebook' />
         </div>
+      </div>
     </footer>
   )
 }
 
-export default Footer
+export default Footer;

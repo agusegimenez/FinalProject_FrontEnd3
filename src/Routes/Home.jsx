@@ -6,7 +6,6 @@ const Home = () => {
   const { state } = useContext(ContextGlobal);
 
   useEffect(() => {
-    // Aquí se podría agregar la lógica para obtener los datos si no se ha hecho antes
   }, []);
 
   return (

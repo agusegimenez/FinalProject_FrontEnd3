@@ -22,7 +22,7 @@ const Card = ({ name, username, id, showDeleteButton, onDelete }) => {
   return (
     <div className={`card ${state.theme}`}>
       <Link to={`/dentist/${id}`}>
-        <img src="../../public/images/doctor.jpg" alt="Doctorimg" />
+        <img src="/images/doctor.jpg" alt="Doctorimg" />
         <h3>{name}</h3>
         <p>{username}</p>
       </Link>

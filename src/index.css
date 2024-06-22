@@ -39,32 +39,47 @@ a:hover{
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: 100%;
+  background-color: grey;
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footerDH {
+  display: flex;
+  align-items: center;
+}
+
+.footerDH p {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.footerDH img {
   height: 40px;
-  margin-top: 2rem;
 }
 
-footer .footerLogo{
+.footerSocials {
   display: flex;
+  gap: 10px;
 }
 
-footer .footerSocials{
-  display: flex;
-  margin: 10px;
-}
-
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
+.footerSocials img {
+  height: 30px;
+  width: 30px;
 }
 
 form{

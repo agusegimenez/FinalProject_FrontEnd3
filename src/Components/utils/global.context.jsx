@@ -22,7 +22,6 @@ export const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    // Fetching the data from API
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => dispatch({ type: 'SET_DATA', payload: data }));
