@@ -4,7 +4,7 @@ import { ContextGlobal } from './utils/global.context';
 import '../Styles/Card.css';
 
 const Card = ({ name, username, id, showDeleteButton, onDelete }) => {
-  const { state, dispatch } = useContext(ContextGlobal);
+  const { state } = useContext(ContextGlobal);
 
   const addFav = () => {
     const favs = JSON.parse(localStorage.getItem('favs')) || [];
